@@ -1,6 +1,6 @@
 import * as ts from "https://esm.sh/ts-morph@27.0.0?standalone"
 
-const project = new ts.Project()
+const project = new ts.Project({ useInMemoryFileSystem: true })
 
 const sourceFile = project.createSourceFile("hello.ts")
 
